@@ -1,0 +1,260 @@
+/*-----------------------------------------------------------------------------------------------------
+Reset
+ ----------------------------------------------------------------------------------------------------*/
+
+html{
+    box-sizing:border-box;
+}
+
+
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+Base Toutes les règles qui s’applique aux éléments HTML de façon général
+ body, a, h1…h6, ul, li, strong, …
+ ----------------------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+/* Enlever la marge sur tout les h1 et h2 */
+h1, h2{
+    margin: 0;
+}
+
+/* Styliser h1 */
+h1{
+    font-family: "Expletus Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 125px;
+
+    color: #2D2D2D;
+
+}
+
+/* Styliser h2 */
+h2{
+    font-family: "Expletus Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83px;
+
+    color: #FFF;
+}
+
+
+/* enlever les puces des listes de tout les li */
+li{
+    list-style: none;
+}
+
+/* Styliser a */
+a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 21px;
+
+    color: #2D2D2D;
+}
+
+/* Styliser hover a */
+a:hover{
+    text-decoration-line: underline;
+    color: #FFFCFC;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------
+Mise en page : blocs et colonnes wrapper, colonne, position, width, height
+ ----------------------------------------------------------------------------------------------------*/
+.wrapper {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-1 { width: 8.33333333333%; }
+.col-2 { width: 16.6666666666%; }
+.col-3 { width: 24.9999999999%; }
+.col-4 { width: 33.3333333333%; }
+.col-5 { width: 41.6666666666%; }
+.col-6 { width: 49.9999999999%; }
+.col-7 { width: 58.3333333333%; }
+.col-8 { width: 66.6666666666%; }
+.col-9 { width: 74.9999999999%; }
+.col-10 { width: 83.3333333333%; }
+.col-11 { width: 91.6666666666%; }
+.col-12 { width: 100%; }
+
+.col-offset-1 { margin-left: 8.33333333333%; }
+.col-offset-2 { margin-left: 16.6666666666%; }
+.col-offset-3 { margin-left: 24.9999999999%; }
+.col-offset-4 { margin-left: 33.3333333333%; }
+.col-offset-5 { margin-left: 41.6666666666%; }
+.col-offset-6 { margin-left: 49.9999999999%; }
+.col-offset-7 { margin-left: 58.3333333333%; }
+.col-offset-8 { margin-left: 66.6666666666%; }
+.col-offset-9 { margin-left: 74.9999999999%; }
+.col-offset-10 { margin-left: 83.3333333333%; }
+.col-offset-11 { margin-left: 91.6666666666%; }
+.col-offset-12 { margin-left: 100%; }
+
+
+
+/*-----------------------------------------------------------------------------------------------------
+Modules article, menu, entête, contenu…
+ ----------------------------------------------------------------------------------------------------*/
+
+/*contenu*/
+.conteneur{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+
+/*header*/
+.header-principal{
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+    background: #FF9800;
+}
+
+/*navigation*/
+.nav-principale ul{
+    position: relative;
+    top: 20px;
+    left: 900px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-principale a{
+    margin-left: 20px;
+}
+
+/*hero*/
+.hero{
+    background: #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.hero h1{
+    padding: 88px 0;
+}
+
+/*information*/
+.information{
+    padding: 30px 0;
+}
+
+.information .conteneur{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carte{
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+}
+
+.carte header{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.carte:nth-child(1) header{
+    background: #e34e26;
+}
+
+.carte:nth-child(2) header{
+    background: #0270bb;
+}
+
+.carte:nth-child(3) header{
+    background: #f8Dc3d;
+}
+
+.conteneur .content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.carte-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carte-footer span{
+    font-size: 0.875rem;
+    line-height: 17px;
+    color: #E64A19;
+}
+
+/*boutons*/
+.bouton{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 17px;
+
+    color: #2D2D2D;
+    background: #FFC107;
+    border: 1px solid #E64A19;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bouton:hover{
+    text-decoration: none;
+    color: #FFF;
+    background: #E64A19;
+    border: 1px solid #E64A19;
+}
+
+/*footer*/
+.footer-principal{
+    height: 60px;
+    background: #E64A19;
+}
+
+.footer-principal h3{
+    margin: 0;
+    padding: 20px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 17px;
+
+    color: #FFF;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+Aide stylistique hidden, visible , ...
+ ----------------------------------------------------------------------------------------------------*/
